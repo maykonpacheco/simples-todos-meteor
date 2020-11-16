@@ -55,7 +55,7 @@ export const App = () => {
       <header>
         <div className="app-bar">
           <div className="app-header">
-            <h1>📝️ To Do List {pendingTasksTitle}</h1>
+            <h1>todo</h1>
           </div>
         </div>
       </header>
@@ -63,15 +63,15 @@ export const App = () => {
       <div className="main">
         { user ? 
         <Fragment>
-          <div className="user" onClick={logout}>
+          {/* <div className="user" onClick={logout}>
             {user.username} 🚪
-          </div>
+          </div> */}
         <TaskForm />
-        <div className="filter">
+        {/* <div className="filter">
           <button onClick={() => setHideCompleted(!hideCompleted)}>
             {hideCompleted ? 'Show All' : 'Hide Completed'}
           </button>
-        </div>
+        </div> */}
 
         <ul className="tasks">
           {tasks.map(task => (
